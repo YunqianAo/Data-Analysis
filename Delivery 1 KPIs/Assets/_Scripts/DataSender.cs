@@ -20,7 +20,7 @@ public class DataSender : MonoBehaviour
         form.AddField("gender", gender.ToString(CultureInfo.InvariantCulture));
         form.AddField("date", date);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~guillemaa/insert_player_data.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~yunqiana/insert_player_data.php", form))
         {
             yield return www.SendWebRequest();
 
