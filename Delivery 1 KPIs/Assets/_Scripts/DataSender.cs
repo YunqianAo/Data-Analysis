@@ -52,7 +52,7 @@ public class DataSender : MonoBehaviour
         form.AddField("playerId", playerId.ToString());
         form.AddField("sessionStartTime", startTime);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~guillemaa/insert_session_data.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~yunqiana/insert_session_data.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -79,7 +79,7 @@ public class DataSender : MonoBehaviour
         form.AddField("sessionId", sessionId.ToString());
         form.AddField("sessionEndTime", endTime);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~guillemaa/insert_end_session_data.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~yunqiana/insert_end_session_data.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -107,7 +107,7 @@ public class DataSender : MonoBehaviour
         form.AddField("itemId", itemId.ToString());
         form.AddField("purchaseDate", purchaseDate);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~guillemaa/insert_purchase_data.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://citmalumnes.upc.es/~yunqiana/insert_purchase_data.php", form))
         {
             yield return www.SendWebRequest();
 
