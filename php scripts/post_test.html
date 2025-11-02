@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+<h3>Test insert_session_data.php</h3>
+<form method="post" action="insert_session_data.php" target="_blank">
+    playerId: <input name="playerId" value="1"><br>
+    sessionStartTime: <input name="sessionStartTime" value="2025-11-02 12:00:00"><br>
+    <button>POST</button>
+</form>
+
+<h3>Test insert_end_session_data.php</h3>
+<form method="post" action="insert_end_session_data.php" target="_blank">
+    sessionId: <input name="sessionId" value="1"><br>
+    sessionEndTime: <input name="sessionEndTime" value="2025-11-02 12:30:00"><br>
+    <button>POST</button>
+</form>
+
+<h3>Test insert_purchase_data.php</h3>
+<form method="post" action="insert_purchase_data.php" target="_blank">
+    playerId: <input name="playerId" value="1"><br>
+    itemId: <input name="itemId" value="101"><br>
+    purchaseDate: <input name="purchaseDate" value="2025-11-02 12:15:00"><br>
+    <button>POST</button>
+</form>
