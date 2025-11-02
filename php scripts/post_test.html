@@ -1,23 +1,46 @@
 <!doctype html>
+<html lang="en">
 <meta charset="utf-8">
-<h3>Test insert_session_data.php</h3>
+<title>POST Test - Data Upload</title>
+<body style="font-family: Arial, sans-serif; margin: 30px; line-height: 1.6;">
+
+<h2>✅ Player / 玩家 数据上传测试 (insert_player_data.php)</h2>
+<form method="post" action="insert_player_data.php" target="_blank">
+  name: <input name="name" value="Alice"><br>
+  country: <input name="country" value="Spain"><br>
+  age: <input name="age" value="25"><br>
+  gender: <input name="gender" value="0.5"><br>
+  date: <input name="date" value="2025-11-02 18:30:00"><br>
+  <button type="submit">POST</button>
+</form>
+
+<hr>
+
+<h2>🕓 Session Start / 开始会话 (insert_session_data.php)</h2>
 <form method="post" action="insert_session_data.php" target="_blank">
-    playerId: <input name="playerId" value="1"><br>
-    sessionStartTime: <input name="sessionStartTime" value="2025-11-02 12:00:00"><br>
-    <button>POST</button>
+  playerId: <input name="playerId" value="1"><br>
+  sessionStartTime: <input name="sessionStartTime" value="2025-11-02 12:00:00"><br>
+  <button type="submit">POST</button>
 </form>
 
-<h3>Test insert_end_session_data.php</h3>
+<hr>
+
+<h2>🕔 Session End / 结束会话 (insert_end_session_data.php)</h2>
 <form method="post" action="insert_end_session_data.php" target="_blank">
-    sessionId: <input name="sessionId" value="1"><br>
-    sessionEndTime: <input name="sessionEndTime" value="2025-11-02 12:30:00"><br>
-    <button>POST</button>
+  sessionId: <input name="sessionId" value="1"><br>
+  sessionEndTime: <input name="sessionEndTime" value="2025-11-02 12:30:00"><br>
+  <button type="submit">POST</button>
 </form>
 
-<h3>Test insert_purchase_data.php</h3>
+<hr>
+
+<h2>🛒 Purchase / 购买记录 (insert_purchase_data.php)</h2>
 <form method="post" action="insert_purchase_data.php" target="_blank">
-    playerId: <input name="playerId" value="1"><br>
-    itemId: <input name="itemId" value="101"><br>
-    purchaseDate: <input name="purchaseDate" value="2025-11-02 12:15:00"><br>
-    <button>POST</button>
+  playerId: <input name="playerId" value="1"><br>
+  itemId: <input name="itemId" value="101"><br>
+  purchaseDate: <input name="purchaseDate" value="2025-11-02 12:15:00"><br>
+  <button type="submit">POST</button>
 </form>
+
+</body>
+</html>
